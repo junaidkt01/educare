@@ -1,0 +1,350 @@
+<div class="kids-programs-section">
+  <div class="d-flex align-items-center justify-content-between">
+    <div></div>
+    <div class="sections-title">
+      <h1>Our way of <span>Teaching</span></h1>
+    </div>
+
+    <button class="btn-wrapper">
+      <div class="button-1">
+        <p>View All</p>
+        <img src="/assets/icons/button-arrow.svg" alt="" />
+      </div>
+      <div class="button-2">
+        <p>View All</p>
+        <img src="/assets/icons/button-arrow.svg" alt="" />
+      </div>
+    </button>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper-container-wrapper">
+    <!-- Prev Button -->
+    <div class="swiper-button-prev"></div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-card">
+          <div class="kids-programs-contents">
+            <h2 class="kids-programs-title">English Grammar</h2>
+            <p class="kids-programs-text">
+              Master the building blocks of writing and communication.
+            </p>
+            <button class="btn-wrapper">
+              <div class="button-1">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+              <div class="button-2">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+
+          <img
+            width="187px"
+            height="248px"
+            src="../assets/img/kids-programs1.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide slide-card">
+          <div class="kids-programs-contents">
+            <h2 class="kids-programs-title">English Grammar</h2>
+            <p class="kids-programs-text">
+              Master the building blocks of writing and communication.
+            </p>
+            <button class="btn-wrapper">
+              <div class="button-1">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+              <div class="button-2">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+          <img
+            width="187px"
+            height="248px"
+            src="../assets/img/kids-programs2.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide slide-card">
+          <div class="kids-programs-contents">
+            <h2 class="kids-programs-title">English Grammar</h2>
+            <p class="kids-programs-text">
+              Master the building blocks of writing and communication.
+            </p>
+            <button class="btn-wrapper">
+              <div class="button-1">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+              <div class="button-2">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+          <img
+            width="187px"
+            height="248px"
+            src="../assets/img/kids-programs3.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide slide-card">
+          <div class="kids-programs-contents">
+            <h2 class="kids-programs-title">English Grammar</h2>
+            <p class="kids-programs-text">
+              Master the building blocks of writing and communication.
+            </p>
+            <button class="btn-wrapper">
+              <div class="button-1">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+              <div class="button-2">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+          <img
+            width="187px"
+            height="248px"
+            src="../assets/img/kids-programs1.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide slide-card">
+          <div class="kids-programs-contents">
+            <h2 class="kids-programs-title">English Grammar</h2>
+            <p class="kids-programs-text">
+              Master the building blocks of writing and communication.
+            </p>
+            <button class="btn-wrapper">
+              <div class="button-1">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+              <div class="button-2">
+                <p>Read more</p>
+                <img src="/assets/icons/button-arrow.svg" alt="" />
+              </div>
+            </button>
+          </div>
+
+          <img
+            width="137px"
+            height="208px"
+            src="../assets/img/kids-programs2.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Pagination (Dots) -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Next Button -->
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<style>
+  .kids-programs-section {
+    padding: 80px 150px;
+
+    @media (max-width: 1290px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 1125px) {
+      padding: 40px 30px;
+    }
+
+    @media (max-width: 764px) {
+      padding: 40px 16px;
+    }
+  }
+
+  .btn-wrapper {
+    border: none;
+    height: 50px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .button-1,
+  .button-2 {
+    padding: 13px 17px;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform-origin: center;
+    border-radius: 8px;
+    color: #ffff;
+    display: flex;
+    gap: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  .button-1 {
+    background-color: var(--secondary-color);
+    transform: translate(-0%, -50%) rotate(2.66deg);
+  }
+
+  .button-2 {
+    background-color: var(--primary-color);
+    transform: translate(-0%, -50%) rotate(-2.66deg);
+  }
+
+  .btn-wrapper:hover .button-1,
+  .btn-wrapper:hover .button-2 {
+    transform: translate(-0%, -50%) rotate(0deg);
+  }
+
+  .kids-programs-contents {
+    padding: 30px 0 30px 30px;
+    width: 70%;
+
+    display: grid;
+  }
+
+  .kids-programs-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: var(--primary-color);
+  }
+
+  .kids-programs-text {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -2%;
+  }
+
+  /* Swiper.js */
+  .swiper-container-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .kids-programs-section .mySwiper {
+    width: 100%;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .kids-programs-section .swiper-wrapper {
+    align-items: center;
+  }
+
+  .kids-programs-section .swiper-slide {
+    display: flex;
+
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .kids-programs-section .slide-card {
+    width: 100%;
+    max-width: 500px;
+    /* height: 195px; */
+    background-color: #fff3e1;
+    border-radius: 8px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev {
+    left: -50px;
+    color: var(--primary-color);
+    /* color: #8a153833; */
+  }
+
+  .swiper-button-next {
+    right: -50px;
+    color: var(--primary-color);
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Style all bullets */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #8a153833;
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+    border-radius: 50%;
+  }
+
+  /* Style the active bullet */
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Swiper.js */
+</style>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      764: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1080: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>

@@ -1,0 +1,138 @@
+<footer class="footer-section">
+  <div class="footer-contents-wrapper">
+    <div class="header-logo footer">
+      <img src="./assets/logo.svg" alt="logo" />
+      <span>Educare</span>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; width: 100%">
+      <div class="queck-links">
+        <h2>Navigation</h2>
+        <div class="d-grid">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Curriculum</a>
+          <a href="#">Career</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+
+      <div class="queck-links" style="display: grid; gap: 16px">
+        <div style="margin-left: 13px">
+          <h2>Contact info</h2>
+          <div class="d-grid">
+            <a href="#">educare@gmail.com</a>
+            <a href="#">info@educare.com</a>
+            <a href="#">+974 4412 3456</a>
+            <a href="#">+974 5534 7890</a>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/icons/instagram.svg" alt="instagram" />
+          <img src="./assets/icons/facebook.svg" alt="facebook" />
+          <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+          <img src="./assets/icons/youtube.svg" alt="youtube" />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex address-wrapper" style="gap: 45px">
+      <img src="./assets/icons/small-map.svg" alt="mini-map" />
+      <div>
+        <h2>Office Address</h2>
+        <p>
+          EducareEducation Center <br />
+          Building 45, Al Sadd Street, <br />
+          Doha, Qatar
+        </p>
+        <a href="">View on Map</a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="align-items-center justify-content-between text-white copy-right-section"
+  >
+    <p>© 2024 educare</p>
+    <p><span>Designed By </span>Noviindus Technologies</p>
+    <div class="d-flex">
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .copy-right-section {
+    border-top: 1px solid #dcc19659;
+    height: 93px;
+    padding: 0 150px;
+    display: flex;
+
+    @media (max-width: 1290px) {
+      padding: 0px 60px;
+    }
+    @media (max-width: 1125px) {
+      padding: 0px 30px;
+    }
+
+    @media (max-width: 764px) {
+      padding: 16px 16px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .footer-section {
+    background-color: var(--primary-color);
+  }
+
+  .header-logo.footer,
+  .queck-links,
+  .queck-links,
+  .address-wrapper {
+    width: 100%;
+  }
+
+  .footer-contents-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 64px 150px;
+    width: 100%;
+
+    @media (max-width: 1290px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 1125px) {
+      padding: 40px 30px;
+    }
+
+    @media (max-width: 764px) {
+      padding: 40px 16px;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+
+  .footer-contents-wrapper h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166%;
+    letter-spacing: -2%;
+    color: #ffffff;
+  }
+  .footer-contents-wrapper p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 166%;
+    letter-spacing: -2%;
+    color: #ffffff;
+  }
+
+  .footer-contents-wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+</style>

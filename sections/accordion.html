@@ -1,0 +1,140 @@
+<div class="accordion-section">
+  <div class="sections-title">
+    <h1>Frequently asked <span>Questions</span></h1>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item">
+      <input type="checkbox" id="accordion-1" class="accordion-checkbox" />
+      <label for="accordion-1" class="accordion-header">
+        <span>What subjects do you offer tutoring in?</span>
+        <div class="accordion-icon">
+          <svg viewBox="0 0 24 24">
+            <polyline points="6,9 12,15 18,9"></polyline>
+          </svg>
+        </div>
+      </label>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          We offer tutoring in a wide range of subjects including Math, Science,
+          English, Reading, History, and many more. We also provide specialized
+          test preparation for standardized tests such as the SAT, ACT, and AP
+          exams.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .accordion-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      margin-top: 50px;
+
+      background-color: #f9f7f4;
+
+      padding: 80px 150px;
+
+      @media (max-width: 1290px) {
+        padding: 40px 60px;
+      }
+      @media (max-width: 1125px) {
+        padding: 40px 30px;
+        gap: 16px;
+      }
+
+      @media (max-width: 764px) {
+        padding: 40px 16px;
+      }
+    }
+
+    /* Accordion */
+    .accordion-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .accordion-item {
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      border-bottom: 1px solid #cfcfcf;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      background: none;
+      border: none;
+      width: 100%;
+      padding: 25px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+
+      color: #655945;
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    .accordion-header:hover {
+      background-color: #f9fafb;
+    }
+
+    .accordion-header:focus {
+      outline: none;
+      background-color: #f3f4f6;
+    }
+
+    .accordion-icon {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+
+    .accordion-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: #6b7280;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f8f9fa;
+    }
+
+    .accordion-content-inner {
+      padding: 0 25px 25px 25px;
+
+      color: #655945cc;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 31px;
+    }
+
+    /* Checkbox hack for pure CSS accordion */
+    .accordion-checkbox {
+      display: none;
+    }
+
+    .accordion-checkbox:checked + .accordion-header .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion-checkbox:checked ~ .accordion-content {
+      max-height: 200px;
+    }
+  </style>
+</div>

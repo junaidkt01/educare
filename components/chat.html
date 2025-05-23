@@ -1,0 +1,89 @@
+<div class="pulse-container">
+  <div class="pulse-ring"></div>
+  <div class="pulse-ring"></div>
+  <div class="pulse-ring"></div>
+  <div class="icon">
+    <img src="./assets/icons/whatsapp.svg" alt="WhatsApp" />
+  </div>
+</div>
+
+<style>
+  .pulse-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 150px;
+    right: 50px;
+
+    @media (max-width: 764px) {
+      width: 50px;
+      height: 50px;
+
+      z-index: 999;
+      position: fixed;
+      top: 90%;
+      right: 10px;
+    }
+  }
+
+  .pulse-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(37, 211, 102, 0.5);
+    animation: pulse 2.5s infinite ease-out;
+  }
+
+  .pulse-ring:nth-child(2) {
+    animation-delay: 1.1s;
+  }
+
+  .pulse-ring:nth-child(3) {
+    animation-delay: 1.7s;
+  }
+
+  .pulse-container .icon {
+    min-width: 57px;
+    min-height: 57px;
+    background-color: #2faf60;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+
+    @media (max-width: 764px) {
+      min-width: 37px;
+      min-height: 37px;
+    }
+  }
+
+  .pulse-container .icon img {
+    width: 25px;
+    height: 25px;
+
+    @media (max-width: 764px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+</style>

@@ -1,0 +1,400 @@
+<div class="stories-section">
+  <div class="stories-contents">
+    <div class="sections-title">
+      <h1>The Story of <span>Educare</span></h1>
+    </div>
+
+    <div class="stories-sub-contents">
+      <div>
+        <div>
+          <p class="para">
+            At <span>Educare</span> education center, we believe that every
+            student deserves personalized, focused attention to reach their
+            fullest potential. Our mission is to empower students through
+            one-on-one tutoring, creating customized learning plans tailored to
+            each individual's unique needs, strengths, and learning styles.
+          </p>
+          <p class="para">
+            Founded on a passion for education and a commitment to excellence,
+            <span>Educare</span> education center was established to offer
+            students a supportive and engaging learning environment. Our team of
+            experienced tutors is dedicated to helping students excel
+            academically while also building confidence, independence, and a
+            love for learning.
+          </p>
+          <p class="para">
+            We specialize in a wide range of subjects across all grade levels,
+            including math, science, English, and test preparation. Whether your
+            child needs help catching up, getting ahead, or preparing for a
+            specific exam, we are here to support their journey.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: start; margin-top: 40px">
+          <button class="btn-wrapper">
+            <div class="btn1">
+              <p>Read more</p>
+              <img src="/assets/icons/button-arrow.svg" alt="" />
+            </div>
+            <div class="btn2">
+              <p>Read more</p>
+              <img src="/assets/icons/button-arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="stamp-container">
+        <div class="stamp">
+          <div class="top-rounds"></div>
+          <div class="bottom-rounds"></div>
+
+          <div class="stamp-img">
+            <img src="./assets/img/stamp-img1.webp" alt="" />
+          </div>
+
+          <div class="left-rounds"></div>
+          <div class="right-rounds"></div>
+        </div>
+
+        <div class="stamp">
+          <div class="top-rounds"></div>
+          <div class="bottom-rounds"></div>
+
+          <div class="stamp-img">
+            <img src="./assets/img/stamp-img2.webp" alt="" />
+          </div>
+
+          <div class="left-rounds"></div>
+          <div class="right-rounds"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mission-vision-section">
+  <div class="mission-vision-card">
+    <div>
+      <h2>Mission</h2>
+      <p>
+        To help students succeed with personalized,
+        <span>one-to-one</span> tutoring that builds confidence, skills, and a
+        love for learning.
+      </p>
+    </div>
+
+    <img
+      style="width: 148px"
+      src="../assets/img/mission-img.webp"
+      alt="mission"
+    />
+  </div>
+  <div class="mission-vision-card">
+    <div>
+      <h2>Vision</h2>
+      <p>
+        To be a trusted center where students reach their potential, build
+        confidence, and prepare for a <span>bright future</span>.
+      </p>
+    </div>
+
+    <img
+      style="width: 148px"
+      src="../assets/img/vision-img.webp"
+      alt="vision"
+    />
+  </div>
+  <div class="curvy-arrow">
+    <img src="../assets/icons/curvy-arrow.svg" alt="button-arrow" />
+  </div>
+</div>
+
+<style>
+  /* mission-vision-section start */
+
+  .mission-vision-section {
+    padding: 0 150px 80px;
+
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: 1290px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 1125px) {
+      padding: 40px 30px;
+    }
+
+    @media (max-width: 764px) {
+      padding: 40px 16px;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .mission-vision-section .mission-vision-card {
+    background-color: #fff3e1;
+    display: flex;
+    padding: 36px;
+    border-radius: 26px;
+    transition: box-shadow 0.3s ease;
+
+    @media (max-width: 764px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+    }
+  }
+
+  .mission-vision-section .mission-vision-card:hover:nth-child(1) {
+    box-shadow: 8px 8px 0 #a42038;
+  }
+
+  .mission-vision-section .mission-vision-card:nth-child(2) {
+    box-shadow: 8px 8px 0 #a42038;
+  }
+
+  .mission-vision-section .mission-vision-card img {
+    transform: translateY(-50%);
+
+    @media (max-width: 764px) {
+      transform: none;
+    }
+  }
+
+  .curvy-arrow {
+    @media (max-width: 764px) {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .mission-vision-section h2 {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  .mission-vision-section p {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 21px;
+  }
+  .mission-vision-section p span {
+    font-weight: 700;
+  }
+
+  /* mission-vision-section end*/
+
+  /* Story contents start */
+  .stories-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 150px;
+
+    @media (max-width: 1290px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 1125px) {
+      padding: 40px 30px;
+      flex-direction: column-reverse;
+    }
+
+    @media (max-width: 764px) {
+      padding: 40px 16px;
+    }
+  }
+
+  /* .stories-contents {
+    flex: 3;
+  } */
+
+  .stories-sub-contents {
+    display: flex;
+    align-items: start;
+
+    @media (max-width: 764px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  .stories-section .para {
+    width: 90%;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 149%;
+    letter-spacing: -2%;
+  }
+
+  .stories-section .para span {
+    font-weight: 700;
+  }
+
+  /* Story contents end */
+
+  /* Stamp image start */
+  .stamp-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+  }
+
+  .stamp {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* @media (max-width: 764px) {
+      width: 100%;
+    } */
+  }
+
+  .stamp:nth-child(1) {
+    background-color: var(--primary-color);
+    transform: rotate(-3deg) translateX(-10%);
+
+    @media (max-width: 764px) {
+      transform: none;
+    }
+  }
+  .stamp:nth-child(2) {
+    background-color: var(--secondary-color);
+    transform: rotate(20deg) translateY(-20%);
+    @media (max-width: 764px) {
+      transform: none;
+    }
+  }
+
+  .stamp-img {
+    width: 260px;
+    height: 310px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* @media (max-width: 764px) {
+      width: 100%;
+    } */
+  }
+
+  .stamp-img img {
+    width: 100%;
+    height: 310px;
+
+    /* object-fit: fill; */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .top-rounds,
+  .bottom-rounds {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .top-rounds {
+    top: 0;
+    transform: translateY(-50%);
+  }
+  .bottom-rounds {
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .left-rounds,
+  .right-rounds {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .left-rounds {
+    left: 0;
+    transform: translateX(-50%);
+  }
+  .right-rounds {
+    right: 0;
+    transform: translateX(50%);
+  }
+  .round {
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 2;
+  }
+  /* Stamp image end */
+
+  .btn-wrapper {
+    border: none;
+    height: 50px;
+    position: relative;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 14px 22px;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    border-radius: 8px;
+    color: #ffff;
+    display: flex;
+    gap: 7px;
+    transition: transform 0.3s ease;
+  }
+
+  .btn1 {
+    background-color: var(--secondary-color);
+    transform: translate(-0%, -50%) rotate(2.66deg);
+  }
+
+  .btn2 {
+    background-color: var(--primary-color);
+    transform: translate(-0%, -50%) rotate(-2.66deg);
+  }
+
+  .btn-wrapper:hover .btn1,
+  .btn-wrapper:hover .btn2 {
+    transform: translate(-0%, -50%) rotate(0deg);
+  }
+</style>
+
+<script>
+  // Generate Round start
+  $(function () {
+    const rounds = {
+      ".top-rounds": 11,
+      ".bottom-rounds": 11,
+      ".left-rounds": 13,
+      ".right-rounds": 13,
+    };
+
+    $.each(rounds, function (selector, count) {
+      for (let i = 0; i < count; i++) {
+        $(selector).append('<div class="round"></div>');
+      }
+    });
+  });
+  // Generate Round end
+</script>

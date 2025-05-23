@@ -1,0 +1,211 @@
+<div class="marquee-container">
+  <h1>Curriculums we offer:</h1>
+  <div class="marquee-content">
+    <div class="marquee-track">
+      <div class="curriculum-item">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee3.webp"
+          alt="Pearson"
+        />
+      </div>
+      <div class="curriculum-item">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee6.webp"
+          alt="SABIS"
+        />
+      </div>
+      <div class="curriculum-item active">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee7.webp"
+          alt="Cambridge"
+        />
+      </div>
+      <div class="curriculum-item">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee3.webp"
+          alt="SABIS"
+        />
+      </div>
+      <div class="curriculum-item">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee6.webp"
+          alt="AP"
+        />
+      </div>
+      <div class="curriculum-item">
+        <img
+          class="curriculum-logo"
+          src="../assets/img/marquee7.webp"
+          alt="AP"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .marquee-container {
+    width: 50%;
+    position: relative;
+  }
+
+  .marquee-container h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 23.54px;
+    line-height: 24.3px;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+
+    margin-top: 60px;
+  }
+
+  .marquee-content {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+  }
+
+  .marquee-track {
+    display: flex;
+    position: absolute;
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+
+  .curriculum-item {
+    flex: 0 0 200px;
+    margin: 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+
+  .curriculum-item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .curriculum-logo {
+    width: 150px;
+    height: 108px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .curriculum-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+</style>
+
+<script>
+  $(document).ready(function () {
+    const $track = $(".marquee-track");
+    const $items = $(".curriculum-item");
+    // const itemWidth = 240;
+    const itemWidth = 200;
+    const centerIndex = Math.floor($items.length / 2);
+    let currentIndex = centerIndex;
+    let isAnimating = false;
+
+    // Initialize positions
+    initPositions();
+
+    function initPositions() {
+      // Calculate starting position to center the active item
+      const initialOffset =
+        -(currentIndex * itemWidth) +
+        ($(".marquee-content").width() / 2 - itemWidth / 2);
+      $track.css("transform", "translateX(" + initialOffset + "px)");
+      $items.eq(currentIndex).addClass("active");
+    }
+
+    function moveMarquee() {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      // Pause for 0.3 seconds before moving
+      setTimeout(function () {
+        // Update current index and handle wrapping
+        currentIndex = (currentIndex + 1) % $items.length;
+
+        // Remove active class from all items
+        $items.removeClass("active");
+
+        // Add active class to new center item
+        $items.eq(currentIndex).addClass("active");
+
+        // Calculate new position
+        const newOffset =
+          -(currentIndex * itemWidth) +
+          ($(".marquee-content").width() / 2 - itemWidth / 2);
+
+        // Animate the track to the new position
+        $track.css("transform", "translateX(" + newOffset + "px)");
+
+        // If we've reached the last item, prepare to loop
+        if (currentIndex === $items.length - 1) {
+          // After transition completes, reset without animation
+          setTimeout(function () {
+            // Clone the first item and append it to the end
+            const $firstItem = $items.eq(0).clone();
+            $track.append($firstItem);
+
+            // Reset position without animation for seamless loop
+            setTimeout(function () {
+              $track.css("transition", "none");
+              currentIndex = 0;
+              $items.removeClass("active");
+              $items.eq(currentIndex).addClass("active");
+              const resetOffset =
+                -(currentIndex * itemWidth) +
+                ($(".marquee-content").width() / 2 - itemWidth / 2);
+              $track.css("transform", "translateX(" + resetOffset + "px)");
+
+              // Remove the clone and restore animation
+              setTimeout(function () {
+                $firstItem.remove();
+                $track.css("transition", "transform 0.5s ease");
+                isAnimating = false;
+
+                // Continue the marquee
+                setTimeout(moveMarquee, 3000);
+              }, 50);
+            }, 500);
+          }, 500);
+        } else {
+          // Continue normal operation after transition
+          setTimeout(function () {
+            isAnimating = false;
+            setTimeout(moveMarquee, 3000);
+          }, 500);
+        }
+      }, 300); // 0.3 second pause
+    }
+
+    // Start the marquee after initial display time
+    setTimeout(moveMarquee, 3000);
+
+    // Recalculate positions on window resize
+    $(window).resize(function () {
+      const newOffset =
+        -(currentIndex * itemWidth) +
+        ($(".marquee-content").width() / 2 - itemWidth / 2);
+      $track.css("transform", "translateX(" + newOffset + "px)");
+    });
+  });
+</script>

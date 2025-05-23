@@ -1,0 +1,56 @@
+<div class="slider">
+  <div class="slide active">
+    <p>Personalized One-to-One</p>
+    <p>Tutoring at Our Center</p>
+  </div>
+  <div class="slide">
+    <p>Individual Tuition,</p>
+    <p>For all students till 12th grade!</p>
+  </div>
+  <div class="slide">
+    <p>Master IELTS, TOEFL,</p>
+    <p>and Beyond with Expert Guidance!</p>
+  </div>
+</div>
+
+<div class="dots">
+  <span class="dot active" data-index="0"></span>
+  <span class="dot" data-index="1"></span>
+  <span class="dot" data-index="2"></span>
+</div>
+
+<script>
+  $(document).ready(function () {
+    let currentIndex = 0;
+    const slides = $(".slide");
+    const dots = $(".dot");
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.removeClass("active");
+      dots.removeClass("active");
+      slides.eq(index).addClass("active");
+      dots.eq(index).addClass("active");
+      currentIndex = index;
+    }
+
+    // Auto slide
+    let interval = setInterval(() => {
+      let nextIndex = (currentIndex + 1) % totalSlides;
+      showSlide(nextIndex);
+    }, 3000);
+
+    // On dot click
+    dots.on("click", function () {
+      let index = $(this).data("index");
+      showSlide(index);
+
+      // Reset the interval so it starts fresh after a manual click
+      clearInterval(interval);
+      interval = setInterval(() => {
+        let nextIndex = (currentIndex + 1) % totalSlides;
+        showSlide(nextIndex);
+      }, 3000);
+    });
+  });
+</script>

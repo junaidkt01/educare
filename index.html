@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Educare – Fun and interactive online learning for school kids. Learn subjects like Math, Science, English and more with ease."
+    />
+    <meta
+      name="keywords"
+      content="Educare, kids education, online learning, school subjects, Math, Science, English, kids study"
+    />
+    <meta name="author" content="Educare" />
+
+    <title>Educare – Learning Made Fun for Kids</title>
+
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Bricolage Grotesque -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Educare</title>
+  </head>
+  <body>
+    <!-- Trigger Button -->
+
+    <!-- <button id="open-demo-btn" class="book-demo">Book a Free Demo Class</button> -->
+    <!-- <div id="book-demo" class="modal-overlay"></div> -->
+
+    <!-- Trigger Button -->
+    <button id="open-demo-btn" class="book-demo">Book a Free Demo Class</button>
+
+    <!-- Modal Wrapper -->
+    <div id="book-demo" class="modal-overlay">
+      <div class="book-demo-modal">
+        <img
+          id="close-btn"
+          class="close-icon"
+          src="../assets/icons/close-icon.svg"
+          alt="close"
+        />
+        <div>
+          <h1>Book a Free Demo Class</h1>
+          <p>Fill up this form and we will connect you shortly</p>
+        </div>
+
+        <form>
+          <div class="book-demo-input">
+            <label>Name</label><br />
+            <input type="text" />
+          </div>
+          <div class="book-demo-input">
+            <label>Email ID</label><br />
+            <input type="text" />
+          </div>
+          <div class="dropdown-wrapper">
+            <select class="custom-dropdown" required>
+              <option value="" disabled selected hidden>
+                Choose your curriculum syllabus
+              </option>
+              <option value="cbse">CBSE</option>
+              <option value="icse">ICSE</option>
+              <option value="state">State Board</option>
+            </select>
+          </div>
+          <!-- Repeat other dropdowns if needed -->
+          <div class="book-demo-input">
+            <label>Write your Message</label><br />
+            <textarea rows="5"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="chat-button"></div>
+    <!-- Include sections -->
+    <div id="header-sec"></div>
+    <div id="banner-sec"></div>
+    <div id="footer-sec"></div>
+    <div id="key-points-sec"></div>
+    <div id="stories-sec"></div>
+    <div id="teaching-sec"></div>
+    <div id="programs-sec"></div>
+    <div id="subjects-sec"></div>
+
+    <!-- Child World Opportunities -->
+    <div id="opportunities-sec">
+      <div class="sections-title">
+        <h1>
+          Prepare Your Child for a
+          <span>World of Opportunities with Educare</span>
+        </h1>
+      </div>
+      <div class="opportunities-img"></div>
+    </div>
+
+    <!-- Marquee Tag -->
+    <div class="marquee-wrapper">
+      <div class="marquee">
+        <span>
+          <img
+            style="width: 28px; height: 44px"
+            src="./assets/img/marquee-icon.webp"
+            alt="icon"
+            class="icon"
+          />
+          Education is the foundation of greatness; let’s build it together
+          <img
+            style="width: 28px; height: 44px"
+            src="./assets/img/marquee-icon.webp"
+            alt="icon"
+            class="icon"
+          />
+          Learning today, leading tomorrow – the Educare way
+          <img
+            style="width: 28px; height: 44px"
+            src="./assets/img/marquee-icon.webp"
+            alt="icon"
+            class="icon"
+          />
+          Turning dreams into achievements through dedicated guidance
+        </span>
+      </div>
+    </div>
+
+    <!-- Learn More About Our Space -->
+    <div id="our-space-sec">
+      <div class="sections-title">
+        <h1>Learn More About <span>Our Space</span></h1>
+      </div>
+      <div class="our-space-img">
+        <img src="./assets/icons/youtube-icon.png" alt="" />
+      </div>
+    </div>
+
+    <div id="master-exams-sec"></div>
+    <div id="testimonials-sec"></div>
+
+    <div id="accordion-sec"></div>
+    <div id="blogs-sec"></div>
+    <!-- <div id="footer-sec"></div> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS, jQuery and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

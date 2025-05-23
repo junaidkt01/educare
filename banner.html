@@ -1,0 +1,168 @@
+<section class="banner-section">
+  <!-- <button id="open-demo-btn" class="book-demo">Book a Free Demo Class</button> -->
+
+  <!-- Modal Wrapper -->
+  <div id="book-demo" class="modal-overlay">
+    <div class="book-demo-modal">
+      <img
+        id="close-btn"
+        class="close-icon"
+        src="../assets/icons/close-icon.svg"
+        alt="close"
+      />
+      <div>
+        <h1>Book a Free Demo Class</h1>
+        <p>Fill up this form and we will connect you shortly</p>
+      </div>
+
+      <form>
+        <div class="book-demo-input">
+          <label>Name</label><br />
+          <input type="text" />
+        </div>
+        <div class="book-demo-input">
+          <label>Email ID</label><br />
+          <input type="text" />
+        </div>
+        <div class="dropdown-wrapper">
+          <select class="custom-dropdown" required>
+            <option value="" disabled selected hidden>
+              Choose your curriculum syllabus
+            </option>
+            <option value="cbse">CBSE</option>
+            <option value="icse">ICSE</option>
+            <option value="state">State Board</option>
+          </select>
+        </div>
+        <!-- Repeat other dropdowns if needed -->
+        <div class="book-demo-input">
+          <label>Write your Message</label><br />
+          <textarea rows="5"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="gravity-wrap left-img">
+    <img class="gravity1" src="./assets/img/banner-img1.webp" alt="" />
+  </div>
+
+  <div class="d-grid align-items-center h-100">
+    <div id="slide-text"></div>
+    <div id="banner-button"></div>
+    <div
+      style="width: 100%; display: flex; justify-content: center"
+      id="marquee"
+    ></div>
+  </div>
+  <div class="gravity-wrap right-img">
+    <img class="gravity2" src="./assets/img/banner-img2.webp" alt="" />
+  </div>
+</section>
+
+<style>
+  @keyframes gravityBounce {
+    0% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(-40px);
+    }
+  }
+
+  .gravity-wrap {
+    z-index: 10;
+  }
+
+  .gravity-wrap.left-img {
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+
+    @media (max-width: 1290px) {
+      left: 60px;
+    }
+    @media (max-width: 1125px) {
+      left: 30px;
+    }
+
+    @media (max-width: 764px) {
+      display: none;
+    }
+  }
+  .gravity-wrap.right-img {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+
+    @media (max-width: 1290px) {
+      right: 60px;
+    }
+    @media (max-width: 1125px) {
+      right: 30px;
+    }
+
+    @media (max-width: 764px) {
+      display: none;
+    }
+  }
+
+  .gravity1,
+  .gravity2 {
+    max-width: 400px;
+    height: 550px;
+
+    @media (max-width: 1290px) {
+      max-width: 300px;
+      height: 450px;
+    }
+    @media (max-width: 1125px) {
+      max-width: 300px;
+      height: 400px;
+    }
+
+    @media (max-width: 1080px) {
+      max-width: 300px;
+      height: 300px;
+    }
+  }
+
+  .gravity1 {
+    animation: gravityBounce 2.2s ease-in-out infinite alternate;
+
+    background-image: url("./assets/img/curvy-circle1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .gravity2 {
+    animation: gravityBounce 2s ease-in-out infinite alternate;
+
+    background-image: url("./assets/img/curvy-circle2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+</style>
+
+<!-- <script>
+  const openBtn = document.getElementById("open-demo-btn");
+  const modal = document.getElementById("book-dem");
+  const closeBtn = document.getElementById("close-btn");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Optional: Click outside modal to close
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script> -->

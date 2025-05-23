@@ -1,0 +1,201 @@
+<header class="header-section">
+  <div class="header-logo">
+    <img src="./assets/logo.svg" alt="logo" />
+    <span>Educare</span>
+  </div>
+  <!-- Navigation Section -->
+  <nav class="navlinks align-items-center">
+    <a href="#" class="nav-link text-light">About us</a>
+    <div class="dropdown d-flex align-items-center gap-2" id="courses-menu">
+      <a href="#" class="nav-link text-light" id="courses-toggle">Courses</a>
+      <img src="./assets/icons/down-arrow.svg" alt="Dropdown" />
+
+      <ul class="dropdown-menus" id="dropdown-courses">
+        <div class="has-sub">
+          <div style="border: 1px solid #fff3e1; border-radius: 8px">
+            <span
+              style="border-top-left-radius: 8px; border-top-right-radius: 8px"
+              class="submenu-toggle"
+              data-target="#submenu-school"
+            >
+              <a href="#">For School Students </a>
+              <img src="./assets/icons/side-arrow.svg" alt="Dropdown" />
+            </span>
+            <span class="submenu-toggle" data-target="#submenu-kids">
+              <a href="#">For Kids </a>
+              <img src="./assets/icons/side-arrow.svg" alt="Dropdown" />
+            </span>
+            <span
+              style="
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+              "
+              class="submenu-toggle"
+              data-target="#submenu-others"
+            >
+              <a href="#">Others </a>
+              <img src="./assets/icons/side-arrow.svg" alt="Dropdown" />
+            </span>
+          </div>
+
+          <div class="submenu" id="submenu-school">
+            <p><a href="#">Math</a></p>
+            <p><a href="#">Physics</a></p>
+            <p><a href="#">Chemistry</a></p>
+            <p><a href="#">Biology</a></p>
+            <p><a href="#">Engpsh</a></p>
+            <p><a href="#">Arabic</a></p>
+            <p><a href="#">Computer Science</a></p>
+            <p><a href="#">Civics</a></p>
+            <p><a href="#">Geography</a></p>
+            <p><a href="#">Economics</a></p>
+            <p><a href="#">History</a></p>
+            <p><a href="#">Politics</a></p>
+          </div>
+
+          <div class="submenu" id="submenu-kids">
+            <p><a href="#">kids 1</a></p>
+            <p><a href="#">kids 2</a></p>
+            <p><a href="#">kids 3</a></p>
+          </div>
+          <div class="submenu" id="submenu-others">
+            <p><a href="#">other 1</a></p>
+            <p><a href="#">other 2</a></p>
+            <p><a href="#">other 3</a></p>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <a href="#" class="nav-link text-light">Careers</a>
+    <a href="#" class="nav-link text-light">News & Blogs</a>
+    <a href="#" class="nav-link text-light">Payments</a>
+  </nav>
+
+  <div class="header-responsive">
+    <div class="hamburger-icon">
+      <img width="36" height="36" src="./assets/icons/hamburger.svg" alt="" />
+    </div>
+  </div>
+
+  <div class="contacts-details align-items-center">
+    <div class="d-grid gap-1">
+      <div class="d-flex align-items-center gap-2">
+        <img src="./assets/icons/phone.svg" alt="phone" />
+        <a href="#" class="contact-link text-light">+974 55555 3456</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <img src="./assets/icons/envelope.svg" alt="envelop" />
+        <a href="#" class="contact-link text-light">info@educare.qa</a>
+      </div>
+    </div>
+    <button>Contact</button>
+  </div>
+</header>
+
+<style>
+  .dropdown-menus {
+    border-radius: 8px;
+    transform: translateY(35px);
+  }
+
+  #dropdown-courses,
+  #submenu-school,
+  #submenu-kids {
+    display: none;
+    position: absolute;
+    border-radius: 8px;
+    min-width: 200px;
+    z-index: 1000;
+  }
+
+  .submenu-toggle {
+    border-bottom: 1px solid #6559451a;
+    background-color: #fff3e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 17px;
+    gap: 20px;
+
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  #dropdown-courses {
+    top: 100%;
+    left: 0;
+  }
+
+  #submenu-school,
+  #submenu-kids {
+    left: 100%;
+    top: 0;
+  }
+
+  #dropdown-courses p {
+    position: relative;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  #dropdown-courses .submenu {
+    border-radius: 8px;
+    border: 1px solid #fff3e1;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  #dropdown-courses .submenu p {
+    position: relative;
+    padding: 10px 17px;
+    text-wrap: nowrap;
+
+    border-bottom: 1px solid #6559451a;
+    background-color: #fff3e1;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  #dropdown-courses a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    text-wrap: nowrap;
+  }
+
+  #dropdown-courses .submenu-toggle:hover a,
+  #dropdown-courses .submenu p:hover a {
+    color: #ffffff;
+  }
+
+  #dropdown-courses .submenu-toggle:hover,
+  #dropdown-courses .submenu p:hover {
+    background-color: var(--primary-color);
+  }
+</style>
+
+<script>
+  $(document).ready(function () {
+    // Toggle main Courses dropdown
+    $("#courses-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dropdown-courses").slideToggle(200);
+      // Close other open submenus
+      $(".submenu").not("#dropdown-courses").slideUp(200);
+    });
+
+    // Toggle submenus
+    $(".submenu-toggle").click(function (e) {
+      e.preventDefault();
+      const target = $(this).data("target");
+      $(target).slideToggle(200);
+      // Optionally close other submenus at the same level
+      $(this).closest("ul").find(".submenu").not(target).slideUp(200);
+    });
+
+    // Optional: Close menu if clicked outside
+    $(document).click(function (e) {
+      if (!$(e.target).closest("#courses-menu").length) {
+        $("#dropdown-courses, .submenu").slideUp(200);
+      }
+    });
+  });
+</script>
