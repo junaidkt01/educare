@@ -1,0 +1,23 @@
+# Educate 🎓
+
+**Educate** is a responsive and user-friendly educational website built using HTML, CSS, Bootstrap, jQuery, and Swiper.js.  
+It is designed to showcase educational content in a clean and structured way with smooth animations and a modern layout.
+
+## 🚀 Features
+
+- Responsive design with Bootstrap
+- Interactive sliders using Swiper.js
+- Smooth scrolling and dynamic behavior powered by jQuery
+- Simple and clean UI for educational content
+- Cross-browser compatibility
+
+## 🛠 Technologies Used
+
+- **HTML5** – For structure
+- **CSS3** – For styling
+- **Bootstrap 5** – For layout and responsiveness
+- **jQuery** – For interactivity
+- **Swiper.js** – For sliders/carousels
+
+## Live
+https://junaidkt01.github.io/educare/
