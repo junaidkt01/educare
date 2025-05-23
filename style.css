@@ -345,7 +345,7 @@ body {
 /*----- BANNER SECTION START-----*/
 
 .banner-section {
-  background: url("./assets/img/banner-bg.webp") no-repeat center center;
+  background: url("assets/img/banner-bg.webp") no-repeat center center;
   background-size: cover;
   height: 100dvh;
   position: relative;
@@ -559,7 +559,7 @@ body {
 }
 
 .opportunities-img {
-  background-image: url("./assets/img/opportunities.webp");
+  background-image: url("assets/img/opportunities.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -594,7 +594,7 @@ body {
 }
 
 .our-space-img {
-  background-image: url("./assets/img/our-space.webp");
+  background-image: url("assets/img/our-space.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
