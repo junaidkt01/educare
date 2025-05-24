@@ -1,19 +1,17 @@
 <section class="blog-section">
   <div class="d-flex align-items-center justify-content-between">
-    <div class="sections-title">
-      <h1>Our way of <span>Teaching</span></h1>
+    <div class="sections-title" style="width: 100%">
+      <h1>Our Latest <span>Blog Posts</span></h1>
     </div>
 
-    <button class="btn-wrapper">
-      <div class="btn1">
-        <p>View All</p>
-        <img src="/assets/icons/button-arrow.svg" alt="" />
+    <div class="hide-primary-button">
+      <div class="primary-button">
+        <p>
+          <span>View All</span
+          ><img src="/assets/icons/button-arrow.svg" alt="" />
+        </p>
       </div>
-      <div class="btn2">
-        <p>View All</p>
-        <img src="/assets/icons/button-arrow.svg" alt="" />
-      </div>
-    </button>
+    </div>
   </div>
 
   <div class="blogs">
@@ -115,41 +113,5 @@
     font-weight: 500;
     font-size: 18px;
     color: #65594599;
-  }
-
-  .btn-wrapper {
-    border: none;
-    height: 50px;
-    position: relative;
-  }
-
-  .btn1,
-  .btn2 {
-    padding: 14px 22px;
-    text-wrap: nowrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center;
-    border-radius: 8px;
-    color: #ffff;
-    display: flex;
-    gap: 7px;
-    transition: transform 0.3s ease;
-  }
-
-  .btn1 {
-    background-color: var(--secondary-color);
-    transform: translate(-100%, -50%) rotate(2.66deg);
-  }
-
-  .btn2 {
-    background-color: var(--primary-color);
-    transform: translate(-100%, -50%) rotate(-2.66deg);
-  }
-
-  .btn-wrapper:hover .btn1,
-  .btn-wrapper:hover .btn2 {
-    transform: translate(-100%, -50%) rotate(0deg);
   }
 </style>

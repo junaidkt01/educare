@@ -1,20 +1,18 @@
 <div class="subjects-section">
   <div class="d-flex align-items-center justify-content-between">
-    <div></div>
-    <div class="sections-title">
+    <div class="hide-primary-button"></div>
+    <div class="sections-title" style="width: 100%">
       <h1>Subjects We <span>Teach</span></h1>
     </div>
 
-    <button class="btn-wrapper">
-      <div class="button-1">
-        <p>View All</p>
-        <img src="/assets/icons/button-arrow.svg" alt="" />
+    <div class="hide-primary-button">
+      <div class="primary-button">
+        <p>
+          <span>View All</span
+          ><img src="/assets/icons/button-arrow.svg" alt="" />
+        </p>
       </div>
-      <div class="button-2">
-        <p>View All</p>
-        <img src="/assets/icons/button-arrow.svg" alt="" />
-      </div>
-    </button>
+    </div>
   </div>
 
   <!-- Swiper -->
@@ -110,43 +108,6 @@
     color: var(--primary-color);
     margin-top: 7px;
     text-wrap: nowrap;
-  }
-
-  .btn-wrapper {
-    border: none;
-    height: 50px;
-    position: relative;
-    background-color: transparent;
-  }
-
-  .button-1,
-  .button-2 {
-    padding: 13px 17px;
-    text-wrap: nowrap;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform-origin: center;
-    border-radius: 8px;
-    color: #ffff;
-    display: flex;
-    gap: 6px;
-    transition: transform 0.3s ease;
-  }
-
-  .button-1 {
-    background-color: var(--secondary-color);
-    transform: translate(-0%, -50%) rotate(2.66deg);
-  }
-
-  .button-2 {
-    background-color: var(--primary-color);
-    transform: translate(-0%, -50%) rotate(-2.66deg);
-  }
-
-  .btn-wrapper:hover .button-1,
-  .btn-wrapper:hover .button-2 {
-    transform: translate(-0%, -50%) rotate(0deg);
   }
 
   /* Swiper.js */

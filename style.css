@@ -22,13 +22,13 @@ body {
 .sections-title h1 {
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: clamp(26px, 4vw, 42px);
   line-height: 83px;
   color: #655945;
 
   @media (max-width: 764px) {
     line-height: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
@@ -701,3 +701,108 @@ body {
 }
 
 /* BOOK DEMO BUTTON END */
+
+/* PRIMARY BUTTON START */
+
+.hide-primary-button {
+  @media (max-width: 764px) {
+    display: none;
+  }
+}
+
+.primary-button {
+  display: flex;
+  transform: rotate(4deg);
+  width: fit-content;
+  border-radius: 8px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  transition: transform 0.4s ease;
+
+  @media (max-width: 764px) {
+    transform: rotate(0deg);
+  }
+}
+
+.primary-button p {
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px 22px;
+  white-space: nowrap;
+  transform: rotate(-8deg);
+  background-color: var(--primary-color);
+  transition: transform 0.4s ease;
+
+  font-weight: 500;
+  font-size: calmp(16px, 4vw, 19px);
+
+  @media (max-width: 764px) {
+    transform: rotate(0deg);
+  }
+}
+
+.primary-button:hover {
+  transform: rotate(0deg);
+}
+
+.primary-button:hover p {
+  transform: rotate(0deg);
+}
+
+.primary-button p span {
+  margin-right: 7px;
+}
+
+/* .primary-button {
+  position: relative;
+  width: max-content;
+  height: 50px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+
+  background-color: red;
+}
+
+.button-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 8px;
+  gap: 7px;
+  white-space: nowrap;
+  color: #fff;
+  transition: rotate 0.3s ease;
+  width: fit-content;
+}
+
+.beneath {
+  background-color: var(--secondary-color);
+  rotate: 2.66deg;
+  z-index: 1;
+}
+
+.top {
+  background-color: var(--primary-color);
+  rotate: -2.66deg;
+  z-index: 2;
+}
+
+.primary-button:hover .beneath,
+.primary-button:hover .top {
+  rotate: 0deg;
+}
+
+.button-layer img {
+  width: 16px;
+  height: 16px;
+} */
+
+/* PRIMARY BUTTON END */

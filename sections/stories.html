@@ -30,17 +30,11 @@
           </p>
         </div>
 
-        <div style="display: flex; justify-content: start; margin-top: 40px">
-          <button class="btn-wrapper">
-            <div class="btn1">
-              <p>Read more</p>
-              <img src="/assets/icons/button-arrow.svg" alt="" />
-            </div>
-            <div class="btn2">
-              <p>Read more</p>
-              <img src="/assets/icons/button-arrow.svg" alt="" />
-            </div>
-          </button>
+        <div class="primary-button">
+          <p>
+            <span>Read more</span
+            ><img src="/assets/icons/button-arrow.svg" alt="" />
+          </p>
         </div>
       </div>
 
@@ -84,11 +78,7 @@
       </p>
     </div>
 
-    <img
-      style="width: 148px"
-      src="assets/img/mission-img.webp"
-      alt="mission"
-    />
+    <img style="width: 148px" src="assets/img/mission-img.webp" alt="mission" />
   </div>
   <div class="mission-vision-card">
     <div>
@@ -99,11 +89,7 @@
       </p>
     </div>
 
-    <img
-      style="width: 148px"
-      src="assets/img/vision-img.webp"
-      alt="vision"
-    />
+    <img style="width: 148px" src="assets/img/vision-img.webp" alt="vision" />
   </div>
   <div class="curvy-arrow">
     <img src="assets/icons/curvy-arrow.svg" alt="button-arrow" />
@@ -124,11 +110,12 @@
     }
     @media (max-width: 1125px) {
       padding: 40px 30px;
+      flex-direction: column-reverse;
+      align-items: end;
     }
 
     @media (max-width: 764px) {
       padding: 40px 16px;
-      flex-direction: column-reverse;
     }
   }
 
@@ -164,8 +151,8 @@
   }
 
   .curvy-arrow {
-    @media (max-width: 764px) {
-      transform: rotate(-90deg);
+    @media (max-width: 1125px) {
+      transform: rotate(-70deg);
     }
   }
 
@@ -342,42 +329,6 @@
     z-index: 2;
   }
   /* Stamp image end */
-
-  .btn-wrapper {
-    border: none;
-    height: 50px;
-    position: relative;
-  }
-
-  .btn1,
-  .btn2 {
-    padding: 14px 22px;
-    text-wrap: nowrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center;
-    border-radius: 8px;
-    color: #ffff;
-    display: flex;
-    gap: 7px;
-    transition: transform 0.3s ease;
-  }
-
-  .btn1 {
-    background-color: var(--secondary-color);
-    transform: translate(-0%, -50%) rotate(2.66deg);
-  }
-
-  .btn2 {
-    background-color: var(--primary-color);
-    transform: translate(-0%, -50%) rotate(-2.66deg);
-  }
-
-  .btn-wrapper:hover .btn1,
-  .btn-wrapper:hover .btn2 {
-    transform: translate(-0%, -50%) rotate(0deg);
-  }
 </style>
 
 <script>

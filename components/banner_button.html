@@ -1,51 +1,6 @@
-<div style="display: flex; justify-content: center; margin-top: 40px">
-  <button id="open-demo-btn" class="btn-wrapper">
-    <div class="btn-1">
-      <p>Book a Free Demo Class</p>
-      <img src="/assets/icons/button-arrow.svg" alt="" />
-    </div>
-    <div class="btn-2">
-      <p>Book a Free Demo Class</p>
-      <img src="/assets/icons/button-arrow.svg" alt="" />
-    </div>
-  </button>
+<div class="primary-button">
+  <p>
+    <span>Book a Free Demo Class</span
+    ><img src="/assets/icons/button-arrow.svg" alt="" />
+  </p>
 </div>
-<!-- <button id="open-demo-btn">Book a Free Demo Class</button> -->
-
-<style>
-  .btn-wrapper {
-    border: none;
-    height: 50px;
-    position: relative;
-  }
-
-  .btn-1,
-  .btn-2 {
-    padding: 14px 22px;
-    text-wrap: nowrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center;
-    border-radius: 8px;
-    color: #ffff;
-    display: flex;
-    gap: 7px;
-    transition: transform 0.3s ease;
-  }
-
-  .btn-1 {
-    background-color: var(--secondary-color);
-    transform: translate(-50%, -50%) rotate(2.66deg);
-  }
-
-  .btn-2 {
-    background-color: var(--primary-color);
-    transform: translate(-50%, -50%) rotate(-2.66deg);
-  }
-
-  .btn-wrapper:hover .btn-1,
-  .btn-wrapper:hover .btn-2 {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-</style>
